@@ -1,0 +1,18 @@
+
+2024-09-15 20:35:55,125 |  WARNING --- Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "C:\Users\ZBook\Documents\Pyton\UrbanUniversity\Projects\Module_12\tests_12_4.py", line 26, in test_run
+    run_obj = Runner(True, 20)
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\ZBook\Documents\Pyton\UrbanUniversity\Projects\Module_12\rt_with_exceptions.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано bool
+
+2024-09-15 20:35:55,126 |  WARNING --- Неверная скорость для Runner
+Traceback (most recent call last):
+  File "C:\Users\ZBook\Documents\Pyton\UrbanUniversity\Projects\Module_12\tests_12_4.py", line 16, in test_walk
+    run_obj = Runner('Mike', -10)
+              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ZBook\Documents\Pyton\UrbanUniversity\Projects\Module_12\rt_with_exceptions.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -10
